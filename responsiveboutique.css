@@ -1,0 +1,368 @@
+/* Variables CSS : couleurs */
+:root {
+  --ink: #1d1b18;
+  --cream: #f7f3ed;
+  --rose: #c68f83;
+  --sage: #77806b;
+  --white: #fff;
+}
+
+/* Travail Général sur la structure de la page */
+
+* {
+  box-sizing: border-box;
+}
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--cream);
+  font-family: Georgia, "Times New Roman", serif;
+}
+
+/* Header */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  padding: 0 5%;
+  background: rgba(247, 243, 237, 0.96);
+  background: var(--cream);
+  border-bottom: 1px solid rgba(29, 27, 24, 0.08);
+}
+
+.site-header .navbar {
+  --bs-navbar-padding-x: 0;
+  --bs-navbar-padding-y: 0;
+  --bs-navbar-color: var(--ink);
+  --bs-navbar-hover-color: var(--ink);
+  --bs-navbar-active-color: var(--ink);
+  --bs-navbar-brand-color: var(--ink);
+  --bs-navbar-brand-hover-color: var(--ink);
+  --bs-navbar-toggler-border-color: rgba(29, 27, 24, 0.25);
+  min-height: 72px;
+}
+
+.logo {
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+nav link,
+.bag {
+  color: inherit;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 12px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.nav-link:hover,
+.nav-link:focus-visible {
+  text-decoration: underline;
+  text-underline-offset: 6px;
+}
+
+/* Hero : présentation de la marque */
+
+.hero {
+  min-height: 560px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: stretch;
+}
+
+.hero-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+  background: #ede4da;
+}
+
+.eyebrow {
+  margin: 0 0 18px;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+}
+
+h1 {
+  max-width: 620px;
+  margin: 0 0 24px;
+  font-size: clamp(46px, 7vw, 82px);
+  line-height: 0.96;
+  font-weight: normal;
+}
+
+.hero-copy > p:not(.eyebrow) {
+  max-width: 470px;
+  margin: 0 0 32px;
+  font-size: 18px;
+  line-height: 1.7;
+}
+
+.hero-image {
+  min-height: 560px;
+  background:
+    linear-gradient(135deg, rgba(29, 27, 24, 0.05), rgba(29, 27, 24, 0.18)),
+    url("https://images.unsplash.com/photo-1660150912355-83e1298d0115?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D")
+      center/cover;
+}
+
+/* Partie main */
+
+main {
+  max-width: 1380px;
+  margin: auto;
+}
+
+/* New arrivals et Collection */
+
+.new-arrivals {
+  padding: 90px 5%;
+}
+.collections {
+  padding: 90px 5%;
+}
+.section-heading {
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  justify-content: space-between;
+  margin-bottom: 34px;
+  gap: 16px;
+}
+h2 {
+  margin: 0;
+  font-size: clamp(38px, 5vw, 58px);
+  font-weight: normal;
+}
+
+.products {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+}
+
+.product {
+  min-width: 0;
+}
+.product-image {
+  height: 430px;
+  position: relative;
+  overflow: hidden;
+  background: #ddd;
+}
+.product-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.5s ease;
+}
+.product:hover img {
+  transform: scale(1.025);
+}
+
+.tag {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  padding: 8px 10px;
+  background: var(--white);
+  font-family: Arial, sans-serif;
+  font-size: 9px;
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+}
+
+.product-info {
+  display: flex;
+  justify-content: space-between;
+  gap: 15px;
+  padding-top: 16px;
+  font-size: 16px;
+}
+
+.product-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: normal;
+}
+.price {
+  font-family: Arial, sans-serif;
+}
+.product-desc {
+  margin: 4px 0 16px;
+  font-size: 15px;
+  line-height: 1.6;
+}
+
+/* Boutons de la page (Hero et Sections) */
+
+.button {
+  width: fit-content;
+  padding: 16px 24px;
+  border: 1px solid var(--ink);
+  color: var(--ink);
+  background: transparent;
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-decoration: none;
+  text-transform: uppercase;
+  transition: 0.25s;
+}
+.button:hover {
+  background: var(--ink);
+  color: var(--white);
+}
+
+/* Story : histoire et philosophie de la marque (comme une section Abous us) */
+
+.story {
+  display: grid;
+  grid-template-columns: 42% 58%;
+  min-height: 400px;
+  margin: 20px 5% 90px;
+  background: var(--sage);
+  color: var(--white);
+}
+.story-image {
+  background: url("https://plus.unsplash.com/premium_photo-1682097137926-f94ad95bfb71?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D")
+    center/cover;
+  min-height: 400px;
+}
+.story-copy {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 8%;
+}
+.story-copy h2 {
+  max-width: 520px;
+  margin-bottom: 20px;
+}
+.story-copy p {
+  max-width: 520px;
+  line-height: 1.7;
+}
+
+/* Footer */
+
+footer {
+  display: flex;
+  justify-content: space-between;
+  padding: 38px 5%;
+  border-top: 1px solid rgba(29, 27, 24, 0.12);
+  font-family: Arial, sans-serif;
+  font-size: 11px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+}
+
+/* Adapatation à d'autres médias */
+
+@media (min-width: 1101px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}
+
+@media (max-width: 1100px) {
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .products {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  header {
+    height: 100px;
+    flex-wrap: wrap;
+    padding-block: 12px;
+  }
+
+  .site-header .navbar-collapse {
+    background: var(--cream);
+    margin-inline: -5%;
+    padding-inline: 5%;
+    border-top: 1px solid rgba(29, 27, 24, 0.08);
+  }
+
+  nav {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    gap: 18px;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+  .hero {
+    grid-template-columns: 1fr;
+  }
+  .hero-copy {
+    min-height: 440px;
+  }
+  .hero-image {
+    min-height: 420px;
+  }
+  .section-heading {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .products {
+    grid-template-columns: 1fr;
+    gap: 38px;
+  }
+  .product-image {
+    height: 520px;
+  }
+  .story {
+    grid-template-columns: 1fr;
+  }
+  .story-image {
+    min-height: 360px;
+  }
+  .section-heading {
+    align-items: start;
+  }
+}
+
+@media (max-width: 500px) {
+  .hero-copy {
+    min-height: 400px;
+    padding: 12% 7%;
+  }
+  h1 {
+    font-size: 48px;
+  }
+  .collections {
+    padding-top: 65px;
+  }
+
+  .product-image {
+    height: 390px;
+  }
+
+  footer {
+    gap: 20px;
+    flex-direction: column;
+    align-items: center;
+  }
+}

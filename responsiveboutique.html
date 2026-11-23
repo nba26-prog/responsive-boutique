@@ -1,0 +1,266 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Maison Élan — Boutique</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="responsiveboutique.css" />
+  </head>
+  <body>
+    <!-- Header : logo et barre de navigation -->
+    <header class="site-header">
+      <nav class="navbar navbar-expand-lg" aria-label="Main navigation">
+        <a class="navbar-brand logo" href="#">Maison Élan</a>
+
+        <a class="bag ms-auto order-lg-3" href="#">Bag (0)</a>
+
+        <button
+          class="navbar-toggler ms-3"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#menu-nav"
+          aria-controls="menu-nav"
+          aria-expanded="false"
+          aria-label="Open menu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse order-lg-2" id="menu-nav">
+          <ul class="navbar-nav mx-auto">
+            <li class="nav-item">
+              <a class="nav-link" href="#new-arrivals">New arrivals</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#collections">Collections</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#story">Our story</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <!-- Section Hero -->
+      <section class="hero">
+        <div class="hero-copy">
+          <p class="eyebrow">The winter edit 2026</p>
+          <h1>Quiet pieces, lasting presence.</h1>
+          <p>
+            Considered silhouettes in natural textures, made for strong elegant
+            women with busy days and evenings.
+          </p>
+          <a class="button" href="#collections">Discover our collections</a>
+        </div>
+        <div
+          class="hero-image"
+          role="img"
+          aria-label="Woman wearing a neutral summer outfit"
+        ></div>
+      </section>
+
+      <!-- Section New Arrivals contenant 6 articles produits -->
+      <section class="new-arrivals" id="new-arrivals">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Just arrived</p>
+            <h2>New season</h2>
+          </div>
+          <a class="button" href="#">View all</a>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">New</span>
+              <img
+                src="https://images.unsplash.com/photo-1689776948163-11fde47d6d4d?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Tweed jacket in light pink"
+              />
+            </div>
+            <div class="product-info">
+              <span>Caroline Jacket</span>
+              <span class="price">$280</span>
+            </div>
+            <p class="product-desc">Tweed jacket in light pink.</p>
+            <a class="button" href="#" aria-label="Buy now : Caroline Jacket"
+              >Buy now</a
+            >
+          </article>
+
+          <article class="product">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1637563763297-d7eac2696e9c?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Tweed jacket in black and white"
+              />
+            </div>
+            <div class="product-info">
+              <span>Coco Jacket</span>
+              <span class="price">$320</span>
+            </div>
+            <p class="product-desc">Tweed jacket in black and white.</p>
+            <a class="button" href="#" aria-label="Buy now : Coco Jacket"
+              >Buy now</a
+            >
+          </article>
+
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">Limited</span>
+              <img
+                src="https://images.unsplash.com/photo-1550639525-c97d455acf70?auto=format&fit=crop&w=900&q=85"
+                alt="Midi skirt in grey"
+              />
+            </div>
+            <div class="product-info">
+              <span>Élise Skirt</span>
+              <span class="price">$245</span>
+            </div>
+            <p class="product-desc">
+              Grey checked skirt, midi cut and high waist.
+            </p>
+            <a class="button" href="#" aria-label="Buy now : Élise Skirt"
+              >Buy now</a
+            >
+          </article>
+
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">Limited</span>
+              <img
+                src="https://images.unsplash.com/photo-1635262090780-2ed9e994fff4?q=80&w=764&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Black leather jacket"
+              />
+            </div>
+            <div class="product-info">
+              <span>Noa Jacket</span>
+              <span class="price">$345</span>
+            </div>
+            <p class="product-desc">Black leather jacket, with belt.</p>
+            <a class="button" href="#" aria-label="Buy now : Noa Jacket"
+              >Buy now</a
+            >
+          </article>
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">Limited</span>
+              <img
+                src="https://images.unsplash.com/photo-1542381335-c78825c1598b?q=80&w=688&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Trousers in beige"
+              />
+            </div>
+            <div class="product-info">
+              <span>Emilia Trousers</span>
+              <span class="price">$245</span>
+            </div>
+            <p class="product-desc">Beige straight-leg trousers.</p>
+            <a class="button" href="#" aria-label="Buy now : Emilia Trousers"
+              >Buy now</a
+            >
+          </article>
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">Limited</span>
+              <img
+                src="https://images.unsplash.com/photo-1675685828170-fe4b100acd24?q=80&w=687&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Black blazer"
+              />
+            </div>
+            <div class="product-info">
+              <span>Alba Blazer</span>
+              <span class="price">$320</span>
+            </div>
+            <p class="product-desc">Black blazer with a velvet collar.</p>
+            <a class="button" href="#" aria-label="Buy now : Alba Blazer"
+              >Buy now</a
+            >
+          </article>
+        </div>
+      </section>
+
+      <!-- Section Collection contenant 3 aperçus de Collections -->
+      <section class="collections" id="collections">
+        <div class="section-heading">
+          <div>
+            <p class="eyebrow">Discover our collections</p>
+            <h2>Shop now</h2>
+          </div>
+          <a class="button" href="#">View all</a>
+        </div>
+
+        <div class="products">
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">New</span>
+              <img
+                src="https://images.unsplash.com/photo-1788392820077-bdcf700ef344?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Light blue coat"
+              />
+            </div>
+            <div class="product-info">
+              <span>Night Shadow Collection</span>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">New</span>
+              <img
+                src="https://images.unsplash.com/photo-1795150374461-19320558cb5e?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Light blue coat"
+              />
+            </div>
+            <div class="product-info">
+              <span>Film Noir Collection</span>
+            </div>
+          </article>
+
+          <article class="product">
+            <div class="product-image">
+              <span class="tag">New</span>
+              <img
+                src="https://images.unsplash.com/photo-1762843353642-37a1635e0fbb?w=600&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=NHwxMjA3fDA%3D"
+                alt="Light blue coat"
+              />
+            </div>
+            <div class="product-info">
+              <span>Studio Collection</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Section Story pour en apprendre plus sur la marque -->
+      <section class="story" id="story">
+        <div
+          class="story-image"
+          role="img"
+          aria-label="Woman walking in the city"
+        ></div>
+        <div class="story-copy">
+          <p class="eyebrow">Our philosophy</p>
+          <h2>Designed with intention.</h2>
+          <p>
+            We work with independent makers and tactile natural fibers to create
+            fewer, better pieces. Every garment is designed to live beautifully
+            beyond a season.
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+      <span>© 2026 Maison Élan</span>
+      <span>Shipping &nbsp; Returns &nbsp; Instagram</span>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
